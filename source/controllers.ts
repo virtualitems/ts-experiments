@@ -24,7 +24,7 @@ export class Controller {
     this.view.line();
   }
 
-  public async createStudent(name: string, grade: number): Promise<void> {
+  public createStudent(name: string, grade: number): void {
     this.view.clear();
 
     if (Number.isInteger(grade) === false || grade < 0) {
