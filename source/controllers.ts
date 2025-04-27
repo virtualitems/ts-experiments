@@ -23,8 +23,8 @@ export class Controller {
   public async createStudent(name: string, grade: number): Promise<void> {
     this.view.clear();
 
-    if (Number.isInteger(grade) === false) {
-      this.view.error('La nota debe ser un número entero.');
+    if (Number.isInteger(grade) === false || grade < 0) {
+      this.view.error('La nota debe ser un número entero positivo.');
       this.view.line();
       return;
     }
