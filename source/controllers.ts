@@ -1,8 +1,6 @@
 import { Student } from './models';
 import { View } from './views';
 
-type Details = { name?: string; grade?: number };
-
 export class Controller {
   public view: View;
 

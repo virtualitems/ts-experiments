@@ -15,8 +15,6 @@ export function input(prompt: string): Promise<string> {
   });
 }
 
-type Details = { name?: string; grade?: number };
-
 async function main() {
   const controller = new Controller();
 
