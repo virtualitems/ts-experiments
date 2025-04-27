@@ -35,7 +35,6 @@ async function main() {
     }
 
     if (opt === '3') {
-      console.log('Saliendo...');
       break;
     }
   }
