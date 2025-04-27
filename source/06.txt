@@ -1,0 +1,7 @@
+ver descriptores en js
+Object.getOwnPropertyDescriptor({a: 1}, 'a')
+Object.getOwnPropertyDescriptors({a: 1})
+
+ver opción de tsconfig.json "emitDecoratorMetadata"
+
+ver librería "reflect-metadata" https://github.com/rbuckton/reflect-metadata
