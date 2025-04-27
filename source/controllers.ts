@@ -9,7 +9,11 @@ export class Controller {
   }
 
   public showMenu(): void {
-    this.view.menu();
+    this.view.list([
+      '1. Listar estudiantes',
+      '2. Agregar estudiante',
+      '3. Salir',
+    ]);
     this.view.line();
   }
 
