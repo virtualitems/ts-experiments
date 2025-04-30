@@ -20,7 +20,7 @@ export class Controller {
   public listStudents(): void {
     this.view.clear();
     this.view.message('Lista de estudiantes:');
-    this.view.list(Student.list().map(String));
+    this.view.list(Student.all().map(String));
     this.view.line();
   }
 
@@ -34,8 +34,16 @@ export class Controller {
     }
 
     const student = new Student(name, grade);
-    Student.save(student);
 
+    student.save()
+
+    this.view.message('Estudiante creado: ' + student.name);
+    this.view.line();
+  }
+
+  public error(message: string): void {
+    this.view.clear();
+    this.view.error(message);
     this.view.line();
   }
 }

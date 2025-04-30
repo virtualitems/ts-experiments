@@ -13,11 +13,11 @@ export class Student {
     return `${this.name}: ${this.grade}`;
   }
 
-  public static list(): Student[] {
-    return database;
+  public save(): void {
+    database.push(this);
   }
 
-  public static save(student: Student): void {
-    database.push(student);
+  public static all(): Student[] {
+    return database;
   }
 }

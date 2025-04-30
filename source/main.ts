@@ -37,6 +37,8 @@ async function main() {
     if (opt === '3') {
       break;
     }
+
+    controller.error('Opción no válida');
   }
 }
 
