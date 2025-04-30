@@ -18,6 +18,6 @@ export class Student {
   }
 
   public static all(): Student[] {
-    return database;
+    return database.slice();
   }
 }
