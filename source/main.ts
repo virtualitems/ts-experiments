@@ -2,7 +2,7 @@ import { Controller } from './controllers';
 
 import readline from 'node:readline';
 
-export function input(prompt: string): Promise<string> {
+function input(prompt: string): Promise<string> {
   return new Promise((resolve) => {
     const rl = readline.createInterface({
       input: process.stdin,
